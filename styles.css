@@ -99,6 +99,42 @@ nav a:hover {
     justify-content: space-between;
 }
 
+
+#subscribe h2 {
+    font-size: 1.8rem;
+    color: #DD48A3;
+}
+
+#subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#subscribe-form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#subscribe-form button {
+    padding: 10px 20px;
+    background-color: #DD48A3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#subscribe-form button:hover {
+    background-color: #BB3A83;
+} 
 .text {
     width: 50%;
     padding-right: 30px;

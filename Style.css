@@ -184,6 +184,20 @@ button:hover {
         text-align: center;
         font-size: 18px;
     }
+    #subscribe {
+        margin: 20px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #DD48A3;
+        border-radius: 10px;
+        background-color: #fefefe;
+    }
+    
+
+h2 {
+    color: #DD48A3;
+}
+   
     
  @media screen and (max-width: 768px) {
     /* Hide the menu items by default */
