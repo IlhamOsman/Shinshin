@@ -1,5 +1,5 @@
 
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,156 +44,144 @@ nav a:hover {
     background-color: #FFF;
     color: #DD48A3;
 }
-.contact-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
+/* General Styles */
 
-.contact-section h1 {
-    font-size: 36px;
-    color: #DD48A3;
-    margin-bottom: 20px;
-}
+ /* General Styles */
 
-.contact-section p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.contact-options {
+  
+  .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
     padding: 20px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Contact Section with Side Image */
-.contact-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: #f4f4f4;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+ 
+  .contact-form {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .contact-form h1 {
+    font-size: 40px;
     width: 100%;
-    justify-content: space-between;
-}
-
-
-#subscribe h2 {
-    font-size: 1.8rem;
-    color: #DD48A3;
-}
-
-#subscribe p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-#subscribe-form {
+    color: #DD48A3; /* Match the brand color for headings */
+    text-transform: uppercase;
+  }
+  
+  .contact-form p {
+    margin-bottom: 20px;
+  }
+  
+  /* Circular Social Buttons */
+  .social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .circle-btn {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-
-#subscribe-form input {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-#subscribe-form button {
-    padding: 10px 20px;
-    background-color: #DD48A3;
+    align-items: center;
+    border-radius: 50%;
     color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#subscribe-form button:hover {
-    background-color: #BB3A83;
-} 
-.text {
-    width: 50%;
-    padding-right: 30px;
-}
-
-.text h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    width: 900px;
-    text-transform: uppercase;
-    color: #DD48A3;
-}
-
-.text p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-/* Contact Details */
-.contact-details {
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .circle-btn i {
+    margin: 0;
+  }
+  
+  .circle-btn.facebook {
+    background-color: #3b5998;
+  }
+  
+  .circle-btn.facebook:hover {
+    background-color: #314d86;
+  }
+  
+  .circle-btn.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  }
+  
+  .circle-btn.instagram:hover {
+    filter: brightness(1.2);
+  }
+  
+  .circle-btn.telegram {
+    background-color: #0088cc;
+  }
+  
+  .circle-btn.telegram:hover {
+    background-color: #007ab8;
+  }
+  
+  .circle-btn.email {
+    background-color: #6c757d;
+  }
+  
+  .circle-btn.email:hover {
+    background-color: #5a636f;
+  }
+  
+  .circle-btn.phone {
+    background-color: #28a745;
+  }
+  
+  .circle-btn.phone:hover {
+    background-color: #218838;
+  }
+  
+  /* Form Styles */
+  form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
 
-.contact-item {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    width: 250px;
-    color: #333;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+#sendbtn {
+    background-color: #DD48A3;;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
 
-.contact-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.contact-item a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #DD48A3;
-    margin-top: 10px;
-    display: block;
-}
-
-.contact-item a:hover {
-    color: #333;
-}
-
-.contact-item i {
-    font-size: 30px;
-    color: #DD48A3;
-}
-
+  /* Right Section Image */
+  .contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
 /* Image Section */
 .image {
     width: 45%;
@@ -256,59 +244,44 @@ nav a:hover {
 .about-section .image img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
-/* Gallery Section */
-.gallery-container {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.gallery-item {
-    background-color: white;
+/* Gallery Layout */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
-    width: 200px;
+    width: 300px;
     text-align: center;
-}
-
-.gallery-item img {
+  }
+  
+  .product img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 4px;
-}
-
-.size-select {
-    margin: 1rem 0;
-}
-
-.add-to-cart {
+  }
+  
+  .add-to-cart {
     background-color: #DD48A3;
     color: white;
     padding: 0.5rem 1rem;
     border:#DD48A3 solid;
     border-radius: 10px;
     cursor: pointer;
-}
-
-/* Cart Sidebar */
-.cart-sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: white;
-    border-left: 1px solid #ccc;
-    padding: 1rem;
-    display: none;
-    overflow-y: scroll;
-}
-
-/* Modal */
-.modal {
+  }
+  
+  
+  
+  /* Modal Styles */
+  .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -319,8 +292,85 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     z-index: 2000;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px #DD48A3;
+  }
+  
+  .modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .modal-content li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .modal-content button {
+    margin: 10px;
+  }
+  .product-size {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+/* View Cart Button */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* Button styling */
+#viewCart {
+    background-color: #DD48A3;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjustable padding for flexibility */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+/* Modal Content */
 .modal-content {
     background: white;
     width: 90%;
@@ -331,7 +381,7 @@ nav a:hover {
     box-shadow: 0 4px 8px #DD48A3;
 }
 
-.modal-content h3 {
+.modal-content h2 {
     margin-bottom: 20px;
 }
 
@@ -341,47 +391,12 @@ nav a:hover {
     margin: 0;
 }
 
-.modal-content ul li {
+.modal-content li {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
 }
 
-.modal-content p {
-    font-weight: bold;
-    margin: 15px 0;
-}
-
 .modal-content button {
-    margin: 5px;
-}
-#confirm-order{
-    background-color: #DD48A3;
-    color: white;
-    padding: 0.5rem 1rem;
-    border:#DD48A3 solid;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#close-modal{
-    background-color: #d2181b;;
-    color: white;
-    padding: 0.5rem 1rem;
-    border:#d2181b solid;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
-#cart-items {
-    list-style: none;
-    padding: 0;
-}
-
-#cart-items li {
-    margin-bottom: 1rem;
-}
-
-#checkout-btn {
     background-color: #DD48A3;
     color: white;
     padding: 0.5rem 1rem;
@@ -390,13 +405,55 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Footer */
+
+.modal-content li button {
+    background-color: #e11111;
+    color: white;
+    padding: 0.5rem 1rem;
+    border:#de1010 solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 footer {
-    width: 100%;
-    padding: 10px;
-    position: relative;
     background-color: #DD48A3;
-    color: #FFF;
+    color: #fff;
     text-align: center;
-    font-size: 18px;
+    padding: 20px 0;
+}
+
+.subscribe-footer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-footer h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.subscribe-footer form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-footer input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.subscribe-footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #DD48A3;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }

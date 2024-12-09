@@ -175,30 +175,51 @@ button:hover {
         border: none;
         cursor: pointer;
     }
-    footer {
-        width: 100%;
-        padding: 10px;
-        position: relative;
-        background-color: #DD48A3;
-        color: #FFF;
-        text-align: center;
-        font-size: 18px;
-    }
-    #subscribe {
-        margin: 20px;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #DD48A3;
-        border-radius: 10px;
-        background-color: #fefefe;
-    }
-    
-
-h2 {
-    color: #DD48A3;
+/* Footer styles */
+footer {
+    background-color: #DD48A3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
-   
-    
+
+.subscribe-footer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-footer h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.subscribe-footer form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-footer input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.subscribe-footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #DD48A3;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+  
  @media screen and (max-width: 768px) {
     /* Hide the menu items by default */
     nav ul {

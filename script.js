@@ -13,21 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("visible");
     });
 });
-document.getElementById("subscribe-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevents the form from refreshing the page
-
-    const emailInput = document.getElementById("subscribe-email");
-
-    if (emailInput.value) {
-        // Show an alert message
-        alert("Thank you for your subscription!");
-
-        // Clear the input field
-        emailInput.value = "";
-    } else {
-        alert("Please enter a valid email address.");
+document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting
+    const email = document.getElementById('email').value;
+    
+    if (email) {
+        alert('Thank you for subscribing!');
+        document.getElementById('subscribeForm').reset(); // Clear the input
     }
 });
+
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
